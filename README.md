@@ -14,7 +14,7 @@ This is a Flask-based Quiz App that allows users to answer questions based on di
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/quiz-app.git
+git clone https://github.com/your-username/QuizWiz.git
 ```
 
 2. Change into the project directory:
@@ -52,25 +52,3 @@ python app.py
 
 5. Answer the questions on the main quiz page. If you select a wrong answer, the window will turn red until the correct answer is chosen.
 
-
-## Customization
-
-- You can choose to restructure it by changing the api serving the questions
-- Additional CSS styles or templates can be added or modified in the `templates` and `static` directories.
-- To extend the functionality, you can modify the Flask routes and add new routes to handle different pages or actions.
-
-## Contributing
-
-Contributions are welcome! If you find any issues or want to enhance the Quiz App, feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Acknowledgements
-
-- This app was built using the Flask framework, which is a micro web framework for Python.
-- The project structure and code organization were inspired by best practices and recommendations for Flask applications.
-
----
-# Built by Permac
