@@ -37,6 +37,8 @@ def newexam(encoded_data):
         return render_template("error.html")
     
     name = dict_data.get("name", [""])[0]  # Use get to avoid KeyError
+    category = dict_data.get("Category", [""])[1]
+    difficulty = dict_data.get("difficulty", [""])[2]
     session['username'] = name
     session['loggedin'] = True
     # Save questions to a JSON file
