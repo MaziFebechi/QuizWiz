@@ -37,15 +37,16 @@ def newexam(encoded_data):
         return render_template("error.html")
     
     name = dict_data.get("name", [""])[0]  # Use get to avoid KeyError
-    category = dict_data.get("Category", [""])[1]
-    difficulty = dict_data.get("difficulty", [""])[2]
+    amount = dict_data.get("amount", [""])[0]
+    category = dict_data.get("category", [""])[0]
+    difficulty = dict_data.get("difficulty", [""])[0]
     session['username'] = name
     session['loggedin'] = True
     # Save questions to a JSON file
     with open(name + '.json', 'w') as f:
         json.dump(question_bank, f)
     
-    return render_template("start.html", questions=question_bank, name=name)
+    return render_template("start.html", questions=question_bank, name=name, amount=amount, category=category, difficulty=difficulty)
 
 
 @app.route("/startexam/<name>")
